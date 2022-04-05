@@ -1,29 +1,19 @@
 //class model
 export class Negociation {
-
-    #data
-    #quantity
-    #value
-
     //constructor
     constructor(data, quantity, value) {
-        this.#data = data
-        this.#quantity = quantity
-        this.#value = value
-
-
+        this._data = data;
+        this._quantity = quantity;
+        this._value = value;
     }
-
     //getters
     get data() {
-        return this.#data
+        return this._data;
     }
-
     get value() {
-        return this.#value
+        return this._value;
     }
-
     get volume() {
-        return this.#value * this.#quantity
+        return this._value * this._quantity;
     }
 }
