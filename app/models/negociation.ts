@@ -1,12 +1,12 @@
 //class model
 export class Negociation {
 
-    private _data
-    private _quantity
-    private _value
+    private _data: Date
+    private _quantity: number
+    private _value: number 
 
     //constructor
-    constructor(data, quantity, value) {
+    constructor(data: Date, quantity: number, value: number) {
         this._data = data
         this._quantity = quantity
         this._value = value
