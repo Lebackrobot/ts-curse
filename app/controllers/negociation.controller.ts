@@ -1,12 +1,15 @@
 import { Negociation } from '../models/negociation.js'
+import { Negociations } from '../models/negociations.js'
 
 export class negociationController {
 
     private inputDate: HTMLInputElement
     private inputQuantity: HTMLInputElement
     private inputValue : HTMLInputElement
+    private negociations: Negociations
 
     constructor() {
+
         this.inputDate = document.querySelector('#data')
         this.inputQuantity = document.querySelector('#quantidade')
         this.inputValue = document.querySelector('#valor')
